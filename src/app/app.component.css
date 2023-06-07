@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 50px 0;
+  border-bottom: 2px solid #c5c5c5;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  color: #b3adbd;
+}
+
+.courseUSD {
+  padding: 0 50px;
+  background-color: #49225d;
+  border-radius: 20px 0 0 20px;
+}
+
+.courseEUR {
+  padding: 0 50px;
+  background-color: #49225d;
+  border-radius: 0 20px 20px 0;
+}
+
+.image {
+  width: 20px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

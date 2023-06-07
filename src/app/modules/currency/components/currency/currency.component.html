@@ -1,0 +1,29 @@
+<div class="container" [formGroup]="currencyForm">
+  <div class="form-group">
+    <mat-form-field class="input" color="accent">
+      <mat-label>Amount:</mat-label>
+      <input matInput type="number" formControlName="amount" min="0" appValidate>
+    </mat-form-field>
+
+    <mat-form-field class="input" color="accent">
+      <mat-label>From:</mat-label>
+      <mat-select formControlName="fromCurrency">
+        <mat-option *ngFor="let currency of supportedCountries" [value]="currency">{{ currency }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-form-field class="input" color="accent">
+      <mat-label>Result:</mat-label>
+      <input matInput type="number" formControlName="result" min="0" appValidate>
+    </mat-form-field>
+
+    <mat-form-field class="input" color="accent">
+      <mat-label>To:</mat-label>
+      <mat-select formControlName="toCurrency">
+        <mat-option *ngFor="let currency of supportedCountries" [value]="currency">{{ currency }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
